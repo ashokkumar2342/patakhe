@@ -1,7 +1,6 @@
 node_modules
 public/hot
 public/storage
-storage/*.key
 vendor/*
 .idea
 .vscode
@@ -11,6 +10,5 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 .env
-storage
 vendor/autoload.php
 storage/framework/sessions/9rxsxdo6uuGnxZvl7XEi4l7zGavA7A26dozQGWhm
