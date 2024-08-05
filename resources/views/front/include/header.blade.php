@@ -138,7 +138,7 @@
 					<div class="nav-outer" >
 						<ul class="nav navbar-nav">
 							<li ><a href="{{route('front.home')}}">Home</a></li>		 
-							<li class="dropdown">
+							{{-- <li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Information</a>
 								<ul class="dropdown-menu pages">
 									<li>
@@ -158,8 +158,8 @@
 										</div>
 									</li> 
 								</ul>
-							</li>
-							<li class="dropdown">
+							</li> --}}
+						{{-- 	<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Consultancy</a>
 								<ul class="dropdown-menu pages">
 									<li>
@@ -175,8 +175,8 @@
 										</div>
 									</li>  
 								</ul>
-							</li>
-							<li class="dropdown">
+							</li> --}}
+							{{-- <li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Assistance</a>
 								<ul class="dropdown-menu pages">
 									<li>
@@ -194,12 +194,12 @@
 										</div>
 									</li>  
 								</ul>
-							</li>
+							</li> --}}
 							<li class="dropdown yamm mega-menu">
 								<a href="javascript:;" data-toggle="collapse" data-target="#productMenuCat">Products</a>
 				                
 							</li>
-							<li class="dropdown">
+							{{-- <li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Services</a>
 								<ul class="dropdown-menu pages">
 									<li>
@@ -220,7 +220,7 @@
 										</div>
 									</li>
 								</ul>
-							</li>
+							</li> --}}
 						</ul><!-- /.navbar-nav -->
 						<div class="clearfix"></div>				
 					</div><!-- /.nav-outer -->
