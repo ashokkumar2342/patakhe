@@ -37,7 +37,7 @@ $fruits =  App\Model\Catalog\ProductOnCategory::where('product_on_categories.cid
 		@endphp
 		<div class="item item-carousel">
 			<div class="products">						
-				<div class="product" style="box-shadow: 2px 2px #eee;">		
+				<div class="product text-center" style="box-shadow: 2px 2px #eee;">		
 					<div class="product-image" >
 						<div class="image">
 							<a href="{{ route('front.product.details',[$fruit->pName,$fruit->cName,$fruit->cUkey,$fruit->piUkey,$fruit->pUkey]) }}">
@@ -47,7 +47,7 @@ $fruits =  App\Model\Catalog\ProductOnCategory::where('product_on_categories.cid
 							</a>
 						</div>			   
 					</div><!-- /.product-image -->
-					<div class="product-info text-left">
+					<div class="product-info text-center">
 
 						<h3 class="name">
 							<a href="{{ route('front.product.details',[$fruit->pName,$fruit->cName,$fruit->cUkey,$fruit->piUkey,$fruit->pUkey]) }}">{{ $fruit->pName }} ({{ $fruit->piQty.' '.DB::table('units')->find($fruit->piUnit)->alias }})</a>
