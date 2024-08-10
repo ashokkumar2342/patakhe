@@ -8,7 +8,7 @@
 	   	<meta name="keywords" content="@yield('keywords','ecommerce in rohtak, online shopping in rohtak, best online shopping in rohtak, free shipping in rohtak, medicine in rohtak')" >
 		<meta name="description" content="@yield('description','ecommerce in rohtak, online shopping in rohtak, best online shopping in rohtak, free shipping in rohtak, medicine in rohtak')" >
 		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" >
-		<meta name="Author" content="www.icaps.co.in" >
+		<meta name="Author" content="https://patake4u.com" >
 		
 		<meta name="allow-search" content="yes" >
 		<meta name="google-site-verification" content="ZHnpnuDSoBQH-y1P9cUD9PdiOq0J8HRsZmoa-RlyXBw" >
@@ -78,7 +78,7 @@
 	        	for (var i = 0; i < response.data.jsonData.length; i++) {
 	        	    var data = response.data.jsonData[i];
 	        	    
-	        		$('#searchResult').append('<li style="padding:1px;margin:3px"><a style="color:#555; display:block" href="http://www.icaps.co.in/search?name='+data.pName+'&category='+data.cName+'&cid='+data.cUkey+'&iid='+data.piUkey+'&pid='+data.pUkey+'">'+(data.pName+' ('+data.piQty+data.piUnit+') '+' in <span style="color:#00e">'+data.cName)+'</span></a></li>');
+	        		$('#searchResult').append('<li style="padding:1px;margin:3px"><a style="color:#555; display:block" href="https://patake4u.com/search?name='+data.pName+'&category='+data.cName+'&cid='+data.cUkey+'&iid='+data.piUkey+'&pid='+data.pUkey+'">'+(data.pName+' ('+data.piQty+data.piUnit+') '+' in <span style="color:#00e">'+data.cName)+'</span></a></li>');
 	        	}
 	        }   
      	}).catch(error=> {

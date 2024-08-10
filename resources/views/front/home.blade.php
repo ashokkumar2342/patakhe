@@ -2,10 +2,10 @@
 @section('content')
 <div id="owl-main" class="owl-carousel owl-inner-nav owl-ui-sm">
 	<div class="item" >
-		<img src="{{ asset('assets/images/sliders/01.jpg') }}">
+		<img src="{{ asset('assets/images/sliders/001.jpeg') }}">
 	</div><!-- /.item -->
 	<div class="item">
-		<img src="{{ asset('assets/images/sliders/02.jpg') }}">
+		<img src="{{ asset('assets/images/sliders/002.jpeg') }}">
 	</div><!-- /.item -->					
 	
 </div><!-- /.owl-carousel -->
