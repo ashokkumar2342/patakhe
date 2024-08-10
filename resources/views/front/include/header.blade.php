@@ -270,56 +270,6 @@
             </div>
         </div>
  </div>
- <div id="owl-main" class="owl-carousel owl-inner-nav owl-ui-sm">
- 	<div class="item" >
- 		<img src="{{ asset('assets/images/sliders/01.jpg') }}">
- 	</div><!-- /.item -->
- 	<div class="item">
- 		<img src="{{ asset('assets/images/sliders/02.jpg') }}">
- 	</div><!-- /.item -->					
- 	
- </div><!-- /.owl-carousel -->
- @if($fruits->count())	
-<!-- ============================================== SCROLL TABS ============================================== -->
-<section class="section featured-product wow fadeInUp">
-	<h3 class="section-title">{{ $fruits->first()->cName }}</h3>
-	<div class="owl-carousel home-owl-carousel custom-carousel owl-theme outer-top-xs" data-item="4">
-		@foreach($fruits as $fruit)
-		@php
-			$imgname = ($fruit->piImage)?$fruit->piImage:$fruit->pImage;
-		@endphp
-		<div class="item item-carousel">
-			<div class="products">						
-				<div class="product">		
-					<div class="product-image">
-						<div class="image">
-							<a href="{{ route('front.product.details',[$fruit->pName,$fruit->cName,$fruit->cUkey,$fruit->piUkey,$fruit->pUkey]) }}">
-								<img style="min-height:176px" src="{{ route('front.product.image.get',['176','192','70',$imgname]) }}" alt="{{ $imgname }}"
-									 
-									title="{{ $imgname }}" >
-							</a>
-						</div>			   
-					</div><!-- /.product-image -->
-					<div class="product-info text-left">
-
-						<h3 class="name">
-							<a href="{{ route('front.product.details',[$fruit->pName,$fruit->cName,$fruit->cUkey,$fruit->piUkey,$fruit->pUkey]) }}">{{ $fruit->pName }} ({{ $fruit->piQty.' '.DB::table('units')->find($fruit->piUnit)->alias }})</a>
-						</h3>								
-						<div class="product-price">	
-                                <span class="price"><i class="fa fa-inr"></i>{{ $fruit->sopMsp }}</span>
-                                @if($fruit->piMrp && $fruit->piMrp > $fruit->sopMsp)<span class="price-before-discount"><i class="fa fa-inr"></i>{{ $fruit->piMrp }} </span>&nbsp;&nbsp;
-                                <span style="color:#0a0; margin-top: 5px">{{  round(($fruit->piMrp-$fruit->sopMsp)/$fruit->piMrp*100) }} %</span>
-                                @endif
-						</div><!-- /.product-price -->						
-					</div><!-- /.product-info -->							
-				</div><!-- /.product -->		      
-			</div><!-- /.products -->
-		</div><!-- /.item -->
-		@endforeach 					
-		</div><!-- /.home-owl-carousel -->
-</section><!-- /.section -->
-<!-- ============================================== SCROLL TABS : END ============================================== -->
-@endif
 
 
 

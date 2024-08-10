@@ -45,11 +45,12 @@
 </head>
 <body>
 @include('front.include.header')
-<div class="body-content outer-top-xs" style="min-height: 500px" id="top-banner-and-menu">
-	<div class="container" id="app">
-		@yield('content')
+@yield('content')
+{{-- <div class="body-content outer-top-xs" style="min-height: 500px" id="top-banner-and-menu">
+	<div class="container-flude" id="app">
+		
 	</div>
-</div>
+</div> --}}
 @include('front.include.footer')
 <script src="{{mix('js/app.js')}}"></script>
 <script src="{{asset('js/progress.js')}}"></script>

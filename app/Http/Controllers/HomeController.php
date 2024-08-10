@@ -16,7 +16,7 @@ class HomeController extends Controller
      */
     public function index()
     { 
-        $fruits =  ProductOnCategory::where('product_on_categories.cid',1)
+        $fruits =  ProductOnCategory::where('product_on_categories.cid',2)
             ->join('categories', 'product_on_categories.cid','=', 'categories.id')
             ->join('products', 'product_on_categories.pid', '=', 'products.id')
             ->leftJoin('product_images','products.id','=','product_images.pid')
