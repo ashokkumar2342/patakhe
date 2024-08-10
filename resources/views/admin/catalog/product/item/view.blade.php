@@ -8,7 +8,7 @@
                 <div class="col-md-8">
                     <table class="">
                         <tr><th>Product Name </th><td> &nbsp;&nbsp; : &nbsp;&nbsp; {{ $product->name }}({{ $productItem->qty.' '.$productItem->unit->alias }})</td></tr>
-                        <tr><th>Category  </th><td> &nbsp;&nbsp; : &nbsp;&nbsp;  @foreach($product->productOnCategory as $category) {{  App\model\Catalog\Category::find($category->cid)->name }} @endforeach</td></tr>
+                        <tr><th>Category  </th><td> &nbsp;&nbsp; : &nbsp;&nbsp;  @foreach($product->productOnCategory as $category) {{  App\Model\Catalog\Category::find($category->cid)->name }} @endforeach</td></tr>
                         <tr><th>In Weight </th><td> &nbsp;&nbsp; : &nbsp;&nbsp; {{ ($product->weight == 1)?'Yes':'No' }}</td></tr>
                         <tr><th>Description </th><td> &nbsp;&nbsp; : &nbsp;&nbsp; {{ $productItem->description }}</td></tr>
                         <tr><th>Keywords </th><td> &nbsp;&nbsp; : &nbsp;&nbsp; {{ $productItem->keywords }}</td></tr>

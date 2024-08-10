@@ -1,3 +1,9 @@
+<style type="text/css">
+	.item{
+		margin: 0px;
+		padding: 0px;
+	}
+</style>
 <header class="header-style-1 app-vue">
 
 	<!-- ============================================== TOP MENU ============================================== -->
@@ -123,7 +129,7 @@
 	</div><!-- /.main-header -->
 	<!-- ============================================== NAVBAR ============================================== -->
 <div class="header-nav animate-dropdown">
-    <div class="container">
+    <div class="container-flude">
         <div class="yamm navbar navbar-default"  role="navigation" >
             <div class="navbar-header">
                 <button data-target="#mc-horizontal-menu-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
@@ -232,7 +238,7 @@
 </div><!-- /.header-nav -->
 <!-- ============================================== NAVBAR : END ============================================== -->
 </header>
- <div class="container collapse" id="productMenuCat">
+ <div class="container-flude collapse" id="productMenuCat">
      <div class="row">
             <div class="col-md-12" >
                 <ul id="mainMenuCat" class="list-inline" style="background:#fff;box-shadow:2px 2px 2px #ccc">
@@ -264,6 +270,15 @@
             </div>
         </div>
  </div>
+ <div id="owl-main" class="owl-carousel owl-inner-nav owl-ui-sm">
+ 	<div class="item" >
+ 		<img src="{{ asset('assets/images/sliders/01.jpg') }}">
+ 	</div><!-- /.item -->
+ 	<div class="item">
+ 		<img src="{{ asset('assets/images/sliders/02.jpg') }}">
+ 	</div><!-- /.item -->					
+ 	
+ </div><!-- /.owl-carousel -->
 
 
 

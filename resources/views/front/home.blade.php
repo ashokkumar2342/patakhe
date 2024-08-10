@@ -2,7 +2,7 @@
 @section('content')
 <div class="body-content outer-top-xs" id="top-banner-and-menu">
 	<div class="container-fluid">
-		<div id="myModal" class="modal fade" role="dialog">
+		{{-- <div id="myModal" class="modal fade" role="dialog">
           <div class="modal-dialog">
         
             <!-- Modal content-->
@@ -17,7 +17,7 @@
             </div>
         
           </div>
-        </div>
+        </div> --}}
 	<div class="row">
 	<!-- ============================================== SIDEBAR ============================================== -->	
 		{{-- <div class="col-xs-12 col-sm-12 col-md-3 sidebar">
@@ -30,15 +30,7 @@
 			<!-- ========================================== SECTION – HERO ========================================= -->
 			
 			<div id="hero">
-				<div id="owl-main" class="owl-carousel owl-inner-nav owl-ui-sm">
-					<div class="item" >
-						<img src="{{ asset('assets/images/sliders/01.jpg') }}">
-					</div><!-- /.item -->
-					<div class="item">
-						<img src="{{ asset('assets/images/sliders/03.jpg') }}">
-					</div><!-- /.item -->					
-					
-				</div><!-- /.owl-carousel -->
+				
 			</div>
 						
 			<!-- ========================================= SECTION – HERO : END ========================================= -->	
@@ -259,11 +251,11 @@
 @endsection
 @push('scripts')
 <script type="text/javascript">
-if(getCookie('modal') == ''){
-	$(document).ready(function(){
-		$('#myModal').modal(true);
-	});
-	setCookie("modal", 'add', 1);
-}
+// if(getCookie('modal') == ''){
+// 	$(document).ready(function(){
+// 		$('#myModal').modal(true);
+// 	});
+// 	setCookie("modal", 'add', 1);
+// }
 </script>
 @endpush
